@@ -6,7 +6,6 @@ from typing import Union, List, Dict
 from fastapi import APIRouter, HTTPException, status
 from fastapi.exceptions import RequestValidationError, RequestErrorModel
 from pydantic import BaseModel, root_model
-import requests
 import pandas as pd
 
 router = APIRouter()
