@@ -6,7 +6,7 @@ I have used the data from Norges Bank's portal to create api end-points and used
 
 
 ### Setup and Execute
-1. Fork/Clone/Download this repo <br>
+1. Download this repo <br>
 `git clone https://github.com/jawdat-rana/fast-api.git`
 
 2. Navigate to the directory <br>
@@ -22,7 +22,7 @@ I have used the data from Norges Bank's portal to create api end-points and used
 `uvicorn main:app --reload`
 
 ### Links
-API Repo:
+Dashboard Repo:
 https://github.com/jawdat-rana/dashboard
 
 Hosted API:
