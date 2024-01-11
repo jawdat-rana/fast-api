@@ -72,14 +72,3 @@ async def get_market_overview(by: str = "country", currency: str = "nok"):
     payload = DB.get_market_value(by, currency)
 
     return payload
-
-
-@router.get("/v1/api/market_value/country/{country}", tags=["data"],
-            response_model=NBIMMarketValue)
-def get_market_overview_by_area(area: str):
-    payload = dict()
-    payload['uuid'] = str(uuid.uuid4())
-    payload['timestamp'] = str(datetime.datetime.now())
-    payload['data'] = DB.get_data_by_area(area)
-
-    return payload
